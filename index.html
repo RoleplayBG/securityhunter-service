@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecurityHunter | Professional Web Application Security Audits</title>
+    <meta name="description" content="Professional security audits for web applications. XSS, SQLi, NIS2 compliance checking. Fixed price - pay only for results.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #0f172a 100%); }
+        .glow { box-shadow: 0 0 60px rgba(59, 130, 246, 0.3); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+        @keyframes pulse-slow { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
+        .animate-pulse-slow { animation: pulse-slow 3s infinite; }
+    </style>
+</head>
+<body class="bg-slate-950 text-white">
+    <!-- Header -->
+    <header class="fixed w-full z-50 bg-slate-950/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                    </svg>
+                </div>
+                <span class="text-xl font-bold">SecurityHunter</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="#services" class="text-slate-400 hover:text-white transition">Services</a>
+                <a href="#portfolio" class="text-slate-400 hover:text-white transition">Portfolio</a>
+                <a href="#pricing" class="text-slate-400 hover:text-white transition">Pricing</a>
+                <a href="#contact" class="px-5 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold transition">Get Started</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="gradient-bg min-h-screen flex items-center pt-20">
+        <div class="max-w-6xl mx-auto px-6 py-20">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-4 py-2 bg-blue-600/20 border border-blue-600/30 rounded-full mb-8">
+                    <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse-slow"></span>
+                    <span class="text-blue-300 text-sm font-medium">Available for new projects</span>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    Security Audits That<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Actually Find Vulnerabilities</span>
+                </h1>
+                <p class="text-xl text-slate-400 mb-8 leading-relaxed">
+                    Professional web application security testing. I find XSS, SQL injection, misconfigurations, and compliance gaps before hackers do.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                    <a href="#contact" class="px-8 py-4 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold text-lg transition text-center">
+                        Request Audit
+                    </a>
+                    <a href="#portfolio" class="px-8 py-4 bg-slate-800 hover:bg-slate-700 rounded-lg font-semibold text-lg transition text-center">
+                        See My Work
+                    </a>
+                </div>
+                <div class="flex items-center gap-8 text-slate-400">
+                    <div>
+                        <div class="text-3xl font-bold text-white">417+</div>
+                        <div class="text-sm">Vulnerabilities Found</div>
+                    </div>
+                    <div class="w-px h-12 bg-slate-700"></div>
+                    <div>
+                        <div class="text-3xl font-bold text-white">100%</div>
+                        <div class="text-sm">Detection Rate</div>
+                    </div>
+                    <div class="w-px h-12 bg-slate-700"></div>
+                    <div>
+                        <div class="text-3xl font-bold text-white">€300</div>
+                        <div class="text-sm">Starting Price</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-24 bg-slate-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">What I Test</h2>
+            <p class="text-slate-400 text-center mb-16 max-w-2xl mx-auto">Comprehensive security analysis using automated tools and manual verification</p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 card-hover">
+                    <div class="w-12 h-12 bg-red-600/20 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">XSS Detection</h3>
+                    <p class="text-slate-400">Cross-site scripting vulnerabilities in all input parameters using 30+ payload variations</p>
+                </div>
+
+                <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 card-hover">
+                    <div class="w-12 h-12 bg-orange-600/20 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">SQL Injection</h3>
+                    <p class="text-slate-400">Error-based, boolean-based, time-based, and UNION injection testing</p>
+                </div>
+
+                <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 card-hover">
+                    <div class="w-12 h-12 bg-yellow-600/20 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Security Headers</h3>
+                    <p class="text-slate-400">Analysis of HTTP security headers: CSP, HSTS, X-Frame-Options, and more</p>
+                </div>
+
+                <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 card-hover">
+                    <div class="w-12 h-12 bg-purple-600/20 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">NIS2 Compliance</h3>
+                    <p class="text-slate-400">EU NIS2 Directive compliance checking for critical infrastructure providers</p>
+                </div>
+
+                <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 card-hover">
+                    <div class="w-12 h-12 bg-green-600/20 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H1m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">SSL/TLS Analysis</h3>
+                    <p class="text-slate-400">Certificate validation, weak protocol detection, configuration issues</p>
+                </div>
+
+                <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 card-hover">
+                    <div class="w-12 h-12 bg-cyan-600/20 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Detailed Reports</h3>
+                    <p class="text-slate-400">Professional HTML reports with CVSS scoring, remediation steps, and evidence</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="py-24 bg-slate-950">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Proven Results</h2>
+            <p class="text-slate-400 text-center mb-16 max-w-2xl mx-auto">Real vulnerabilities found in real applications</p>
+
+            <div class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 glow">
+                <div class="flex flex-col lg:flex-row gap-8 items-center">
+                    <div class="flex-1">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 bg-green-600/20 border border-green-600/30 rounded-full text-green-400 text-sm mb-4">
+                            <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                            Verified Finding
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">413 XSS Vulnerabilities in Keycloak</h3>
+                        <p class="text-slate-400 mb-6">
+                            During security research on Keycloak 26.5.2, I discovered 413 cross-site scripting vulnerabilities
+                            using automated RL-based fuzzing combined with manual verification. All findings were reported through
+                            responsible disclosure.
+                        </p>
+                        <div class="grid grid-cols-3 gap-4 mb-6">
+                            <div class="bg-slate-800/50 rounded-lg p-4 text-center">
+                                <div class="text-2xl font-bold text-red-500">413</div>
+                                <div class="text-sm text-slate-400">XSS Found</div>
+                            </div>
+                            <div class="bg-slate-800/50 rounded-lg p-4 text-center">
+                                <div class="text-2xl font-bold text-orange-500">6.1</div>
+                                <div class="text-sm text-slate-400">CVSS Score</div>
+                            </div>
+                            <div class="bg-slate-800/50 rounded-lg p-4 text-center">
+                                <div class="text-2xl font-bold text-blue-500">HIGH</div>
+                                <div class="text-sm text-slate-400">Severity</div>
+                            </div>
+                        </div>
+                        <a href="https://yeswehack.com" target="_blank" class="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition">
+                            View on YesWeHack
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="flex-1">
+                        <div class="bg-slate-950 rounded-xl p-6 font-mono text-sm">
+                            <div class="text-slate-500 mb-2"># Vulnerability Report</div>
+                            <div class="text-green-400 mb-1">✓ Report ID: KEYCLOAK-1770252961</div>
+                            <div class="text-green-400 mb-1">✓ Platform: YesWeHack</div>
+                            <div class="text-green-400 mb-1">✓ Status: Triaged</div>
+                            <div class="text-slate-500 mb-2">---</div>
+                            <div class="text-yellow-400">⚠ Finding: Reflected XSS in admin console</div>
+                            <div class="text-slate-400">Location: /admin/console/users</div>
+                            <div class="text-slate-400">Payload: &lt;img src=x onerror=alert(1)&gt;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 mt-8">
+                <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 text-center">
+                    <div class="text-4xl font-bold text-blue-400 mb-2">417</div>
+                    <div class="text-slate-400">Total Vulnerabilities Found</div>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 text-center">
+                    <div class="text-4xl font-bold text-green-400 mb-2">21.6x</div>
+                    <div class="text-slate-400">Faster Than Manual Testing</div>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 rounded-xl p-6 text-center">
+                    <div class="text-4xl font-bold text-purple-400 mb-2">100%</div>
+                    <div class="text-slate-400">Confirmation Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-24 bg-slate-900">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Simple, Transparent Pricing</h2>
+            <p class="text-slate-400 text-center mb-16 max-w-2xl mx-auto">Pay for results, not promises</p>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Basic -->
+                <div class="bg-slate-800/50 border border-slate-700 rounded-2xl p-8">
+                    <h3 class="text-xl font-semibold mb-2">Basic Scan</h3>
+                    <div class="text-4xl font-bold mb-1">€300</div>
+                    <div class="text-slate-400 text-sm mb-6">per application</div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-green-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-slate-300">XSS & SQL injection testing</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-green-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-slate-300">Security headers analysis</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-green-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-slate-300">HTML report with findings</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-green-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-slate-300">3-day delivery</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="block w-full py-3 bg-slate-700 hover:bg-slate-600 rounded-lg font-semibold text-center transition">
+                        Get Started
+                    </a>
+                </div>
+
+                <!-- Professional -->
+                <div class="bg-gradient-to-b from-blue-900/50 to-slate-800/50 border-2 border-blue-600 rounded-2xl p-8 relative">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-blue-600 rounded-full text-sm font-semibold">
+                        Most Popular
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Professional</h3>
+                    <div class="text-4xl font-bold mb-1">€600</div>
+                    <div class="text-slate-400 text-sm mb-6">per application</div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-green-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-slate-300">Everything in Basic</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-green-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-slate-300">NIS2 compliance assessment</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-green-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-slate-300">CVE lookup & prioritization</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-green-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-slate-300">Remediation guidance</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-green-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-slate-300">48-hour delivery</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="block w-full py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold text-center transition">
+                        Get Started
+                    </a>
+                </div>
+
+                <!-- Enterprise -->
+                <div class="bg-slate-800/50 border border-slate-700 rounded-2xl p-8">
+                    <h3 class="text-xl font-semibold mb-2">Enterprise</h3>
+                    <div class="text-4xl font-bold mb-1">Custom</div>
+                    <div class="text-slate-400 text-sm mb-6">contact for quote</div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-green-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-slate-300">Multiple applications</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-green-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-slate-300">Continuous monitoring</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-green-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-slate-300">API access</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-green-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-slate-300">On-premise deployment</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-green-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-slate-300">Dedicated support</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="block w-full py-3 bg-slate-700 hover:bg-slate-600 rounded-lg font-semibold text-center transition">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <div class="inline-flex items-center gap-2 px-6 py-3 bg-green-600/10 border border-green-600/30 rounded-lg">
+                    <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <span class="text-green-400 font-medium">No findings? You don't pay.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 bg-slate-950">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Get Your Security Audit</h2>
+            <p class="text-slate-400 text-center mb-12">Fill out the form below and I'll get back to you within 24 hours</p>
+
+            <form id="contactForm" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-2">Your Name *</label>
+                        <input type="text" name="name" required
+                               class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg focus:outline-none focus:border-blue-500 transition"
+                               placeholder="John Doe">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-2">Company</label>
+                        <input type="text" name="company"
+                               class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg focus:outline-none focus:border-blue-500 transition"
+                               placeholder="Your Company Ltd">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-slate-300 mb-2">Email *</label>
+                    <input type="email" name="email" required
+                           class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg focus:outline-none focus:border-blue-500 transition"
+                           placeholder="you@company.com">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-slate-300 mb-2">Website to Audit *</label>
+                    <input type="url" name="website" required
+                           class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg focus:outline-none focus:border-blue-500 transition"
+                           placeholder="https://yourapp.com">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-slate-300 mb-2">Package</label>
+                    <select name="package" class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg focus:outline-none focus:border-blue-500 transition">
+                        <option value="basic">Basic Scan - €300</option>
+                        <option value="professional" selected>Professional - €600</option>
+                        <option value="enterprise">Enterprise - Custom Quote</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-slate-300 mb-2">Message</label>
+                    <textarea name="message" rows="4"
+                              class="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-lg focus:outline-none focus:border-blue-500 transition"
+                              placeholder="Tell me about your application, what you're looking for, or any specific concerns..."></textarea>
+                </div>
+
+                <button type="submit"
+                        class="w-full py-4 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold text-lg transition">
+                    Request Security Audit
+                </button>
+            </form>
+
+            <div id="successMessage" class="hidden text-center py-12">
+                <div class="w-16 h-16 bg-green-600/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-2">Request Received!</h3>
+                <p class="text-slate-400">I'll review your website and get back to you within 24 hours with a scan plan.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <span class="font-semibold">SecurityHunter</span>
+                </div>
+                <div class="text-slate-400 text-sm">
+                    © 2025 SecurityHunter. Professional security audits for web applications.
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="mailto:contact@securityhunter.bg" class="text-slate-400 hover:text-white transition">contact@securityhunter.bg</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Form submission handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const formData = new FormData(this);
+            const data = {};
+            formData.forEach((value, key) => data[key] = value);
+
+            // Store lead (in production, send to backend)
+            const leads = JSON.parse(localStorage.getItem('hunter_leads') || '[]');
+            leads.push({
+                ...data,
+                timestamp: new Date().toISOString(),
+                status: 'new'
+            });
+            localStorage.setItem('hunter_leads', JSON.stringify(leads));
+
+            // Show success message
+            this.classList.add('hidden');
+            document.getElementById('successMessage').classList.remove('hidden');
+
+            // Log for debugging
+            console.log('Lead captured:', data);
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
